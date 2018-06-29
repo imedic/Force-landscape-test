@@ -16,8 +16,8 @@
         }
 
         .landscape {
-            width: 100vh;
-            height: 100vw;
+            width: 100vw;
+            height: 100vh;
             background: #fafafa;
             display: flex;
             justify-content: center;
@@ -27,6 +27,12 @@
         .landscape-inner {
             transform: rotateZ(90deg);
             transform-origin: center;
+        }
+
+        @media screen and (orientation: landscape) {
+            .landscape-inner {
+                transform: rotate(0);
+            }
         }
     </style>
 </head>
